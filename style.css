@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #8da5bd;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+  color: #333333;
+}
+
+
+/* =========================
+   RESUME CONTAINER
+========================= */
+
+.resume-container {
+  width: 794px;
+  min-height: 1123px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  height: 280px;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.header-image {
+  width: 100%;
+  height: 280px;
+
+  background-color: #f5f5f5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center center;
+
+  display: block;
+}
+
+
+/* =========================
+   HEADER INFORMATION
+========================= */
+
+.header-info {
+  background-color: #2b60de;
+  color: #ffffff;
+
+  padding: 38px 32px 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-width: 0;
+}
+
+
+/* NAME */
+
+.header-title h1 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+
+/* DEPARTMENT */
+
+.header-title h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+
+/* PROFILE SUMMARY */
+
+.header-title p {
+  font-size: 10px;
+  line-height: 1.45;
+  color: #e0e9fb;
+  margin-top: 9px;
+}
+
+
+/* CONTACT */
+
+.header-contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+
+  font-size: 9.5px;
+  color: #e0e9fb;
+
+  padding-top: 9px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+  min-width: 0;
+}
+
+.header-contact span {
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+  display: grid;
+
+  /*
+    36% left column
+    Remaining space for right column
+  */
+  grid-template-columns: 36% minmax(0, 1fr);
+
+  padding: 25px 38px 55px;
+
+  gap: 18px;
+
+  width: 100%;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+  font-size: 17px;
+  font-weight: 600;
+
+  color: #111111;
+
+  margin-bottom: 10px;
+}
+
+
+/* =========================
+   LEFT COLUMN
+========================= */
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+
+  min-width: 0;
+}
+
+
+.section-block {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.edu-item {
+  margin-bottom: 9px;
+}
+
+.edu-item h4 {
+  font-size: 11.5px;
+  font-weight: 600;
+
+  color: #222222;
+
+  line-height: 1.35;
+}
+
+.edu-item .institute {
+  font-size: 9.7px;
+
+  color: #666666;
+
+  margin-top: 2px;
+
+  line-height: 1.35;
+
+  overflow-wrap: break-word;
+}
+
+.edu-item .date {
+  font-size: 9.5px;
+
+  color: #777777;
+
+  margin-top: 1px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  font-size: 10.5px;
+
+  color: #555555;
+
+  margin-bottom: 4px;
+
+  position: relative;
+
+  padding-left: 12px;
+
+  line-height: 1.35;
+}
+
+
+/* SKILL BULLET */
+
+.skills-list li::before {
+  content: "•";
+
+  position: absolute;
+  left: 0;
+
+  color: #2b60de;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   RIGHT COLUMN
+========================= */
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-item {
+  margin-bottom: 15px;
+
+  min-width: 0;
+}
+
+
+/* PROJECT TITLE */
+
+.project-item h4 {
+  font-size: 11.8px;
+
+  font-weight: 600;
+
+  color: #222222;
+
+  line-height: 1.35;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* TECHNOLOGIES */
+
+.project-tech {
+  font-size: 9px;
+
+  color: #2b60de;
+
+  font-weight: 500;
+
+  margin-top: 2px;
+  margin-bottom: 4px;
+
+  line-height: 1.35;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* PROJECT BULLETS */
+
+.project-bullets {
+  list-style: none;
+}
+
+.project-bullets li {
+  font-size: 10px;
+
+  line-height: 1.4;
+
+  color: #555555;
+
+  margin-bottom: 3px;
+
+  position: relative;
+
+  padding-left: 12px;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* PROJECT BULLET */
+
+.project-bullets li::before {
+  content: "•";
+
+  position: absolute;
+  left: 0;
+
+  color: #444444;
+}
+
+
+/* =========================
+   ADDITIONAL SECTIONS
+========================= */
+
+.additional-section {
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
+
+/* =========================
+   FOOTER DECORATION
+========================= */
+
+.footer-decorations {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  width: 210px;
+  height: 130px;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at 100% 100%,
+    #1cb88e 0%,
+    #2062f6 75%,
+    transparent 76%
+  );
+
+  border-top-left-radius: 100%;
+
+  opacity: 0.9;
+}
+
+
+/* =========================
+   PRINT
+========================= */
+
+@media print {
+
+  body {
+    background: none;
+    padding: 0;
+  }
+
+  .resume-container {
+    width: 100%;
+    min-height: 100vh;
+
+    box-shadow: none;
+  }
+
+}
